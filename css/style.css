@@ -322,6 +322,10 @@ body {
 
 /* .block-text {} */
 
+.block-text_center {
+	text-align: center;
+}
+
 .block-text__title {
 	font-weight: 700;
 	font-size: 44px;
@@ -343,6 +347,11 @@ body {
 
 .block-text__text {
 	line-height: 138.5%;
+}
+
+.block-text__text_mw {
+	max-width: 620px;
+	margin: 0px auto;
 }
 
 .block-text__text:not(:last-child) {
@@ -750,4 +759,66 @@ body {
 	.body-statistics-experts__item:not(:last-child) {
 		margin: 0px 0px 15px 0px;
 	}
+}
+
+/* --------- healchcare ---------- */
+
+.healchcare {
+	padding: 80px 0px 30px 0px;
+}
+
+.healchcare__container {}
+
+.healchcare__block-text {
+	margin: 0px 0px 45px 0px;
+}
+
+.healchcare__items {
+	display: flex;
+	max-width: 980px;
+	margin: 0px auto;
+	gap: 72px;
+}
+
+.healchcare__item {
+	flex: 0 1 33.333%;
+}
+
+.item-healchcare {
+	position: relative;
+	background: #FFFFFF;
+	box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 35px 17px;
+}
+
+.item-healchcare__icon {
+	margin: 0px 0px 58px 0px;
+}
+
+.item-healchcare__title {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 138.5%;
+	margin: 0px 0px 4px 0px;
+}
+
+.item-healchcare__text {
+	line-height: 138.5%;
+}
+
+.item-healchcare_1 {}
+
+.item-healchcare_1::before {
+	content: "";
+	width: 65px;
+	height: 65px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transform: rotate(-30deg);
 }
