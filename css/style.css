@@ -811,13 +811,17 @@ body {
 	line-height: 138.5%;
 }
 
-.item-healchcare_1 {}
+.item-healchcare_1::before,
+.item-healchcare_1::after {
+	content: "";
+	position: absolute;
+	border-color: #EC5863;
+	border-radius: 16px;
+}
 
 .item-healchcare_1::before {
-	content: "";
 	width: 65px;
 	height: 65px;
-	position: absolute;
 	bottom: 0;
 	left: 0;
 	transform: rotate(-30deg);
